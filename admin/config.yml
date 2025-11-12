@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: main   # ou 'master' selon le nom de ta branche
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+locale: "fr"
+
+collections:
+  - name: "accueil"
+    label: "Page d’accueil"
+    files:
+      - file: "content/home.json"
+        label: "Contenu Accueil"
+        name: "home"
+        format: "json"
+        fields:
+          - { label: "Titre (H1)", name: "title", widget: "string" }
+          - { label: "Sous-titre", name: "subtitle", widget: "text" }
+          - label: "Blocs (3 cartes)"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string", required: false }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Texte", name: "text", widget: "text" }

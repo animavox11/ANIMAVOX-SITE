@@ -1,0 +1,25 @@
+:root{--primary:#2E8378;--primary2:#0B2C48;--text:#e5e7eb;--muted:#94a3b8}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0f172a;color:var(--text)}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+.header{position:sticky;top:0;background:rgba(15,23,42,.75);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.brand img{height:42px}
+.menu{display:flex;gap:16px}
+.menu a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+.menu a.active,.menu a:hover{color:white;background:rgba(255,255,255,.06)}
+.hero{padding:64px 0 36px;background:linear-gradient(135deg,var(--primary2),var(--primary));color:#06202a}
+.hero h1{margin:0 0 8px 0;font-size:42px;color:#031724}
+.hero p{margin:0 0 18px 0;color:#d8f3ec}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--primary2),var(--primary));color:white;padding:10px 16px;border-radius:10px;text-decoration:none}
+.section{padding:36px 0;border-top:1px solid rgba(255,255,255,.06)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+.card{grid-column:span 4;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:18px;border-radius:14px}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;color:#d1fae5;background:rgba(46,131,120,.15);border:1px solid rgba(46,131,120,.35)}
+.footer{padding:28px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
+@media(max-width:900px){.card{grid-column:span 6}}
+@media(max-width:600px){.card{grid-column:span 12}.menu{display:none}.hero h1{font-size:32px}}
+/* Agrandissement du logo AnimaVox */
+.header img {
+  height: 90px;   /* augmente ou diminue cette valeur selon le rendu */
+}

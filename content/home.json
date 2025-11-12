@@ -1,0 +1,21 @@
+{
+  "title": "Formations professionnelles Chien & Chat pour refuges, fourrières et associations animales",
+  "subtitle": "Des formations e-learning issues du terrain, conçues pour les refuges, fourrières et associations œuvrant pour les chiens et les chats.",
+  "features": [
+    {
+      "badge": "Concret",
+      "title": "Orienté terrain",
+      "text": "Des procédures et check-lists adaptées aux réalités des refuges/fourrières."
+    },
+    {
+      "badge": "À jour",
+      "title": "Cadre réglementaire",
+      "text": "Références Code rural, DDETSPP, ICAD, traçabilité et registres."
+    },
+    {
+      "badge": "Clair",
+      "title": "Pédagogie",
+      "text": "Visuels, quizz, modèles Word/Excel, trames d’affichage et protocoles."
+    }
+  ]
+}
